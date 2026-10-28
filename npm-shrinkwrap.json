@@ -5280,7 +5280,7 @@
     },
     "node_modules/source-map-support": {
       "version": "0.5.20",
-      "resolved": "https://registry.nlark.com/source-map-support/download/source-map-support-0.5.20.tgz",
+      "resolved": "https://registry.npmjs.org/source-map-support/-/source-map-support-0.5.20.tgz",
       "integrity": "sha1-EhZgifj15ejFaSazd2Mzkt0stsk=",
       "dependencies": {
         "buffer-from": "^1.0.0",
