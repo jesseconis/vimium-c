@@ -81,7 +81,9 @@
     "nclean": "bash -c \"gulp clean\"",
     "local": "gulp local",
     "start": "gulp local",
-    "test": "gulp test"
+    "test": "gulp test",
+    "test:clipboard": "node --test tests/unit/clipboard-permission.cjs",
+    "build:fork": "npm run test:clipboard && BUILD_MV3=1 BUILD_BTypes=1 BUILD_MinCVer=102 BUILD_NeedCommit=0 gulp dist && node scripts/fork-manifest.cjs"
   },
   "version": "2.0.0"
 }

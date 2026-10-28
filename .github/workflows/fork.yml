@@ -1,0 +1,28 @@
+name: Clipboard fork
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test-and-build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: npm-shrinkwrap.json
+      - run: npm ci
+      - run: npm run all
+      - run: npm run build:fork
+      - uses: actions/upload-artifact@v4
+        with:
+          name: vimium-c-jesseconis-unpacked
+          path: dist/
+          if-no-files-found: error

@@ -1,3 +1,6 @@
+> **jesseconis fork:** clipboard permission compatibility fix for Helium/Chromium.
+> See [FORK.md](FORK.md) for building, installation, testing and upstream maintenance.
+
 <a name="readme"></a><h2 align="center">
   <img src="icons/icon128.png" width="32" height="32" alt="" />
   <span style="color: #2f508e;">Vim</span>ium <span style="color: #a55e18;">C</span> - All by Keyboard
